@@ -40,14 +40,24 @@ void MainWindow::onTopicButtonClicked()
             types += QString::fromStdString(type) + " ";
         }
 
-        QTreeWidgetItem *item = new QTreeWidgetItem(ui->topicTreeWidget);
-        item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
-        item->setCheckState(0, Qt::Unchecked);  // 0th column = checkmark
-        item->setText(1, topic_name);           // 1st column = topic name
-        item->setText(2, types.trimmed());       // 2nd column = type name
+        QTreeWidgetItem *parentItem = new QTreeWidgetItem(ui->topicTreeWidget);
+        parentItem->setFlags(parentItem->flags() | Qt::ItemIsUserCheckable);
+        parentItem->setCheckState(0, Qt::Unchecked);
+        parentItem->setText(1, topic_name);
+        parentItem->setText(2, types.trimmed());
 
-        int hz = QRandomGenerator::global()->bounded(0, 21);  // Random 0-20 Hz
-        item->setText(3, QString::number(hz));
+        //int hz = QRandomGenerator::global()->bounded(0, 21);
+        parentItem->setText(3, "0");
+        
+        // 👉 Make Hz column editable
+        parentItem->setFlags(parentItem->flags() | Qt::ItemIsEditable);
+
+        // 👉 Add a child item
+        QTreeWidgetItem *childItem = new QTreeWidgetItem(parentItem);
+        childItem->setText(1, "value");
+        childItem->setFlags(childItem->flags() | Qt::ItemIsEditable);
+
+        parentItem->setExpanded(true);
     }
 }
 
@@ -64,14 +74,24 @@ void MainWindow::onServiceButtonClicked()
             types += QString::fromStdString(type) + " ";
         }
 
-        QTreeWidgetItem *item = new QTreeWidgetItem(ui->serviceTreeWidget);
-        item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
-        item->setCheckState(0, Qt::Unchecked);
-        item->setText(1, service_name);
-        item->setText(2, types.trimmed());
+        QTreeWidgetItem *parentItem = new QTreeWidgetItem(ui->serviceTreeWidget);
+        parentItem->setFlags(parentItem->flags() | Qt::ItemIsUserCheckable);
+        parentItem->setCheckState(0, Qt::Unchecked);
+        parentItem->setText(1, service_name);
+        parentItem->setText(2, types.trimmed());
 
-        int hz = QRandomGenerator::global()->bounded(0, 21);
-        item->setText(3, QString::number(hz));
+        //int hz = QRandomGenerator::global()->bounded(0, 21);
+        parentItem->setText(3, "0");
+
+        // 👉 Make Hz column editable
+        parentItem->setFlags(parentItem->flags() | Qt::ItemIsEditable);
+
+        // 👉 Add a child item
+        QTreeWidgetItem *childItem = new QTreeWidgetItem(parentItem);
+        childItem->setText(1, "Editable Request");
+        childItem->setFlags(childItem->flags() | Qt::ItemIsEditable);
+
+        parentItem->setExpanded(true);
     }
 }
 
@@ -87,15 +107,26 @@ void MainWindow::onActionButtonClicked()
                 QString action_name = QString::fromStdString(topic.first);
                 QString action_type = QString::fromStdString(type);
 
-                QTreeWidgetItem *item = new QTreeWidgetItem(ui->actionTreeWidget);
-                item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
-                item->setCheckState(0, Qt::Unchecked);
-                item->setText(1, action_name);
-                item->setText(2, action_type);
+                QTreeWidgetItem *parentItem = new QTreeWidgetItem(ui->actionTreeWidget);
+                parentItem->setFlags(parentItem->flags() | Qt::ItemIsUserCheckable);
+                parentItem->setCheckState(0, Qt::Unchecked);
+                parentItem->setText(1, action_name);
+                parentItem->setText(2, action_type);
 
-                int hz = QRandomGenerator::global()->bounded(0, 21);
-                item->setText(3, QString::number(hz));
+                //int hz = QRandomGenerator::global()->bounded(0, 21);
+                parentItem->setText(3, "0");
+
+                // 👉 Make Hz column editable
+                parentItem->setFlags(parentItem->flags() | Qt::ItemIsEditable);
+
+                // 👉 Add a child item
+                QTreeWidgetItem *childItem = new QTreeWidgetItem(parentItem);
+                childItem->setText(1, "Editable Goal");
+                childItem->setFlags(childItem->flags() | Qt::ItemIsEditable);
+
+                parentItem->setExpanded(true);
             }
         }
     }
 }
+
