@@ -3,6 +3,7 @@
 
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp/graph_listener.hpp>
+#include <QRandomGenerator>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -10,13 +11,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Initialize ROS2 node (anonymous node)
     if (!rclcpp::ok()) {
         rclcpp::init(0, nullptr);
     }
     node_ = rclcpp::Node::make_shared("qt_gui_node");
 
-    // Connect buttons
     connect(ui->topicButton, &QPushButton::clicked, this, &MainWindow::onTopicButtonClicked);
     connect(ui->serviceButton, &QPushButton::clicked, this, &MainWindow::onServiceButtonClicked);
     connect(ui->actionButton, &QPushButton::clicked, this, &MainWindow::onActionButtonClicked);
@@ -42,8 +41,13 @@ void MainWindow::onTopicButtonClicked()
         }
 
         QTreeWidgetItem *item = new QTreeWidgetItem(ui->topicTreeWidget);
-        item->setText(0, topic_name);
-        item->setText(1, types.trimmed());
+        item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
+        item->setCheckState(0, Qt::Unchecked);  // 0th column = checkmark
+        item->setText(1, topic_name);           // 1st column = topic name
+        item->setText(2, types.trimmed());       // 2nd column = type name
+
+        int hz = QRandomGenerator::global()->bounded(0, 21);  // Random 0-20 Hz
+        item->setText(3, QString::number(hz));
     }
 }
 
@@ -61,8 +65,13 @@ void MainWindow::onServiceButtonClicked()
         }
 
         QTreeWidgetItem *item = new QTreeWidgetItem(ui->serviceTreeWidget);
-        item->setText(0, service_name);
-        item->setText(1, types.trimmed());
+        item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
+        item->setCheckState(0, Qt::Unchecked);
+        item->setText(1, service_name);
+        item->setText(2, types.trimmed());
+
+        int hz = QRandomGenerator::global()->bounded(0, 21);
+        item->setText(3, QString::number(hz));
     }
 }
 
@@ -75,13 +84,17 @@ void MainWindow::onActionButtonClicked()
     for (const auto &topic : topics) {
         for (const auto &type : topic.second) {
             if (type.find("action_msgs") != std::string::npos || type.find("action") != std::string::npos) {
-                // Assume this topic is action related
                 QString action_name = QString::fromStdString(topic.first);
                 QString action_type = QString::fromStdString(type);
 
                 QTreeWidgetItem *item = new QTreeWidgetItem(ui->actionTreeWidget);
-                item->setText(0, action_name);
-                item->setText(1, action_type);
+                item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
+                item->setCheckState(0, Qt::Unchecked);
+                item->setText(1, action_name);
+                item->setText(2, action_type);
+
+                int hz = QRandomGenerator::global()->bounded(0, 21);
+                item->setText(3, QString::number(hz));
             }
         }
     }

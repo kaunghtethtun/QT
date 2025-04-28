@@ -26,6 +26,11 @@
      <widget class="QTreeWidget" name="topicTreeWidget">
       <column>
        <property name="text">
+        <string>Checkmark</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
         <string>Name</string>
        </property>
       </column>
@@ -37,11 +42,6 @@
       <column>
        <property name="text">
         <string>Hz</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Direction</string>
        </property>
       </column>
      </widget>
@@ -57,6 +57,11 @@
      <widget class="QTreeWidget" name="serviceTreeWidget">
       <column>
        <property name="text">
+        <string>Checkmark</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
         <string>Name</string>
        </property>
       </column>
@@ -68,11 +73,6 @@
       <column>
        <property name="text">
         <string>Hz</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Direction</string>
        </property>
       </column>
      </widget>
@@ -88,7 +88,12 @@
      <widget class="QTreeWidget" name="actionTreeWidget">
       <column>
        <property name="text">
-        <string notr="true">Name</string>
+        <string notr="true">Checkmark</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Name</string>
        </property>
       </column>
       <column>
@@ -99,11 +104,6 @@
       <column>
        <property name="text">
         <string>Hz</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>Direction</string>
        </property>
       </column>
      </widget>
