@@ -1,12 +1,9 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#include <rclcpp/rclcpp.hpp>
+#include <std_msgs/msg/string.hpp>  // example message type
 
-#include <QMainWindow>
-#include "rclcpp/rclcpp.hpp"
-
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
+namespace Ui {
+class MainWindow;
+}
 
 class MainWindow : public QMainWindow
 {
@@ -18,12 +15,17 @@ public:
 
 private slots:
     void onGoToListClicked();
-    void onPublishClicked();
     void onSubscribeClicked();
+    void onPublishClicked();
+    void onBackToListClicked();
+    void onPublishMessageClicked();  // For sending message
 
 private:
     Ui::MainWindow *ui;
-    std::shared_ptr<rclcpp::Node> ros2_node_;
-};
 
-#endif // MAINWINDOW_H
+    rclcpp::Node::SharedPtr node_;
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscriber_;
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+
+    QString selectedTopic_;
+};

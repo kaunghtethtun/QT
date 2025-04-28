@@ -1,7 +1,0 @@
-/home/khh/Testing/build/CMakeFiles/uninstall.dir
-/home/khh/Testing/build/CMakeFiles/Testing_uninstall.dir
-/home/khh/Testing/build/CMakeFiles/Testing.dir
-/home/khh/Testing/build/CMakeFiles/test.dir
-/home/khh/Testing/build/CMakeFiles/edit_cache.dir
-/home/khh/Testing/build/CMakeFiles/rebuild_cache.dir
-/home/khh/Testing/build/CMakeFiles/Testing_autogen.dir
