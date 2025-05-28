@@ -1,5 +1,6 @@
-CMakeFiles/ros2_qt.dir/mainwindow.cpp.o: /home/khh/ros2_qt/mainwindow.cpp \
- /usr/include/stdc-predef.h /home/khh/ros2_qt/mainwindow.h \
+CMakeFiles/ros2_qt.dir/mainwindow.cpp.o: \
+ /home/khh/Desktop/Git/QT/ros2_qt/mainwindow.cpp \
+ /usr/include/stdc-predef.h /home/khh/Desktop/Git/QT/ros2_qt/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -735,7 +736,7 @@ CMakeFiles/ros2_qt.dir/mainwindow.cpp.o: /home/khh/ros2_qt/mainwindow.cpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/khh/ros2_qt/build/ros2_qt_autogen/include/ui_mainwindow.h \
+ /home/khh/Desktop/Git/QT/ros2_qt/build/ros2_qt_autogen/include/ui_mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \

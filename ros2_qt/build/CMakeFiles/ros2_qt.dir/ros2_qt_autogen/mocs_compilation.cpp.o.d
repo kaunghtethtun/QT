@@ -1,7 +1,7 @@
 CMakeFiles/ros2_qt.dir/ros2_qt_autogen/mocs_compilation.cpp.o: \
- /home/khh/ros2_qt/build/ros2_qt_autogen/mocs_compilation.cpp \
+ /home/khh/Desktop/Git/QT/ros2_qt/build/ros2_qt_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/khh/ros2_qt/build/ros2_qt_autogen/EWIEGA46WW/moc_mainwindow.cpp \
+ /home/khh/Desktop/Git/QT/ros2_qt/build/ros2_qt_autogen/EWIEGA46WW/moc_mainwindow.cpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -117,7 +117,7 @@ CMakeFiles/ros2_qt.dir/ros2_qt_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/khh/ros2_qt/build/ros2_qt_autogen/EWIEGA46WW/../../../mainwindow.h \
+ /home/khh/Desktop/Git/QT/ros2_qt/build/ros2_qt_autogen/EWIEGA46WW/../../../mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \

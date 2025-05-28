@@ -1,5 +1,6 @@
-CMakeFiles/ros2_qt.dir/main.cpp.o: /home/khh/ros2_qt/main.cpp \
- /usr/include/stdc-predef.h /home/khh/ros2_qt/mainwindow.h \
+CMakeFiles/ros2_qt.dir/main.cpp.o: \
+ /home/khh/Desktop/Git/QT/ros2_qt/main.cpp /usr/include/stdc-predef.h \
+ /home/khh/Desktop/Git/QT/ros2_qt/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \

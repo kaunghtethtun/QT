@@ -1,0 +1,4 @@
+/home/khh/qt_creator/estimated_cost/build/CMakeFiles/estimated_cost.dir
+/home/khh/qt_creator/estimated_cost/build/CMakeFiles/edit_cache.dir
+/home/khh/qt_creator/estimated_cost/build/CMakeFiles/rebuild_cache.dir
+/home/khh/qt_creator/estimated_cost/build/CMakeFiles/estimated_cost_autogen.dir

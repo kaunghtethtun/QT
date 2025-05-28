@@ -1,0 +1,23 @@
+{
+	"BUILD_DIR" : "/home/khh/qt_creator/estimated_cost/build/estimated_cost_autogen",
+	"CMAKE_BINARY_DIR" : "/home/khh/qt_creator/estimated_cost/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/khh/qt_creator/estimated_cost/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/khh/qt_creator/estimated_cost",
+	"CMAKE_SOURCE_DIR" : "/home/khh/qt_creator/estimated_cost",
+	"INCLUDE_DIR" : "/home/khh/qt_creator/estimated_cost/build/estimated_cost_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/khh/qt_creator/estimated_cost/images/motor2.jpg",
+		"/home/khh/qt_creator/estimated_cost/images/motor1.jpg"
+	],
+	"LOCK_FILE" : "/home/khh/qt_creator/estimated_cost/build/CMakeFiles/estimated_cost_autogen.dir/AutoRcc_image_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "image" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_image.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/khh/qt_creator/estimated_cost/build/CMakeFiles/estimated_cost_autogen.dir/AutoRcc_image_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/khh/qt_creator/estimated_cost/image.qrc",
+	"VERBOSITY" : 0
+}
