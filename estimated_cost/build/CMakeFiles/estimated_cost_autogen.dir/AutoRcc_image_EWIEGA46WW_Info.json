@@ -8,6 +8,9 @@
 	"INPUTS" : 
 	[
 		"/home/khh/qt_creator/estimated_cost/images/motor2.jpg",
+		"/home/khh/qt_creator/estimated_cost/images/battery1.jpeg",
+		"/home/khh/qt_creator/estimated_cost/images/battery2.jpg",
+		"/home/khh/qt_creator/estimated_cost/images/motordriver1.png",
 		"/home/khh/qt_creator/estimated_cost/images/motor1.jpg"
 	],
 	"LOCK_FILE" : "/home/khh/qt_creator/estimated_cost/build/CMakeFiles/estimated_cost_autogen.dir/AutoRcc_image_EWIEGA46WW_Lock.lock",

@@ -72,6 +72,9 @@ include CMakeFiles/estimated_cost.dir/flags.make
 estimated_cost_autogen/EWIEGA46WW/qrc_image.cpp: /home/khh/qt_creator/estimated_cost/image.qrc
 estimated_cost_autogen/EWIEGA46WW/qrc_image.cpp: CMakeFiles/estimated_cost_autogen.dir/AutoRcc_image_EWIEGA46WW_Info.json
 estimated_cost_autogen/EWIEGA46WW/qrc_image.cpp: /home/khh/qt_creator/estimated_cost/images/motor2.jpg
+estimated_cost_autogen/EWIEGA46WW/qrc_image.cpp: /home/khh/qt_creator/estimated_cost/images/battery1.jpeg
+estimated_cost_autogen/EWIEGA46WW/qrc_image.cpp: /home/khh/qt_creator/estimated_cost/images/battery2.jpg
+estimated_cost_autogen/EWIEGA46WW/qrc_image.cpp: /home/khh/qt_creator/estimated_cost/images/motordriver1.png
 estimated_cost_autogen/EWIEGA46WW/qrc_image.cpp: /home/khh/qt_creator/estimated_cost/images/motor1.jpg
 estimated_cost_autogen/EWIEGA46WW/qrc_image.cpp: /usr/lib/qt5/bin/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/khh/qt_creator/estimated_cost/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for image.qrc"
