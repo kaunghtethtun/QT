@@ -1,0 +1,4 @@
+/home/khh/DataBaseConnector/build/CMakeFiles/DataBaseConnector.dir
+/home/khh/DataBaseConnector/build/CMakeFiles/edit_cache.dir
+/home/khh/DataBaseConnector/build/CMakeFiles/rebuild_cache.dir
+/home/khh/DataBaseConnector/build/CMakeFiles/DataBaseConnector_autogen.dir
