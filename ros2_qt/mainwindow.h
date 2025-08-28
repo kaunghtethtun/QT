@@ -5,6 +5,9 @@
 #include <QTreeWidgetItem>
 #include <rclcpp/rclcpp.hpp> // ROS2
 #include <memory>
+#include "ros_topic.h" // Custom ROS topic handler
+#include <thread>
+std::thread rclcpp_thread_;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -26,6 +29,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     rclcpp::Node::SharedPtr node_;   // ROS2 node
+    RosTopicHandler *ros_handler_;  
 };
 
 #endif // MAINWINDOW_H

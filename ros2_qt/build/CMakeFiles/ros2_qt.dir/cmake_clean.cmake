@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ros2_qt.dir/mainwindow.cpp.o.d"
   "CMakeFiles/ros2_qt.dir/ros2_qt_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/ros2_qt.dir/ros2_qt_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/ros2_qt.dir/ros_topic.cpp.o"
+  "CMakeFiles/ros2_qt.dir/ros_topic.cpp.o.d"
   "ros2_qt"
   "ros2_qt.pdb"
 )

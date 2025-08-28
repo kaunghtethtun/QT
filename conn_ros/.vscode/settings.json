@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "qapplication": "cpp",
+        "qprocess": "cpp",
+        "qmessagebox": "cpp",
+        "qmap": "cpp"
+    }
+}

@@ -4,6 +4,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp/graph_listener.hpp>
 #include <QRandomGenerator>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,6 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
         rclcpp::init(0, nullptr);
     }
     node_ = rclcpp::Node::make_shared("qt_gui_node");
+    ros_handler_ = new RosTopicHandler(node_, this);  // ✅ Create instance with node
 
     connect(ui->topicButton, &QPushButton::clicked, this, &MainWindow::onTopicButtonClicked);
     connect(ui->serviceButton, &QPushButton::clicked, this, &MainWindow::onServiceButtonClicked);
@@ -45,19 +47,20 @@ void MainWindow::onTopicButtonClicked()
         parentItem->setCheckState(0, Qt::Unchecked);
         parentItem->setText(1, topic_name);
         parentItem->setText(2, types.trimmed());
-
-        //int hz = QRandomGenerator::global()->bounded(0, 21);
         parentItem->setText(3, "0");
-        
-        // 👉 Make Hz column editable
         parentItem->setFlags(parentItem->flags() | Qt::ItemIsEditable);
+        parentItem->setExpanded(true);
 
-        // 👉 Add a child item
         QTreeWidgetItem *childItem = new QTreeWidgetItem(parentItem);
         childItem->setText(1, "value");
+        childItem->setText(2, ""); // ← Value will be filled by RosTopicHandler
         childItem->setFlags(childItem->flags() | Qt::ItemIsEditable);
 
         parentItem->setExpanded(true);
+
+        // 👇 Subscribe and link value
+        ros_handler_->subscribeTopic(topic.first, topic.second[0]);
+        ros_handler_->topic_data_container_items[topic_name] = childItem;
     }
 }
 
