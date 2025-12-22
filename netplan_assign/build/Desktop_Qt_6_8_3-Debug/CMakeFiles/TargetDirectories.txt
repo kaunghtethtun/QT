@@ -1,0 +1,9 @@
+/home/jackal/qtCreator/netplan_assign/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/netplan_assign.dir
+/home/jackal/qtCreator/netplan_assign/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/edit_cache.dir
+/home/jackal/qtCreator/netplan_assign/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/rebuild_cache.dir
+/home/jackal/qtCreator/netplan_assign/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/list_install_components.dir
+/home/jackal/qtCreator/netplan_assign/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/install.dir
+/home/jackal/qtCreator/netplan_assign/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/install/local.dir
+/home/jackal/qtCreator/netplan_assign/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/install/strip.dir
+/home/jackal/qtCreator/netplan_assign/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/netplan_assign_autogen_timestamp_deps.dir
+/home/jackal/qtCreator/netplan_assign/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/netplan_assign_autogen.dir

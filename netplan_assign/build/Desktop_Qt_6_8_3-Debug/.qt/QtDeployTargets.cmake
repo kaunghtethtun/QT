@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_netplan_assign_FILE /home/jackal/qtCreator/netplan_assign/build/Desktop_Qt_6_8_3-Debug/netplan_assign)
+set(__QT_DEPLOY_TARGET_netplan_assign_TYPE EXECUTABLE)

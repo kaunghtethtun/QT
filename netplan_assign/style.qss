@@ -1,0 +1,45 @@
+/* NetPlan Assign - Application Stylesheet */
+
+/* Central widget - background gradient */
+QWidget#centralwidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #0f2027, stop:0.5 #203a43, stop:1 #2c5364);
+}
+
+/* All labels - white text, no border */
+QLabel {
+    color: white;
+    font-weight: 600;
+    background: transparent;
+    border: none;
+}
+
+/* Input fields */
+QLineEdit {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    padding: 8px;
+    selection-background-color: #ff7e5f;
+}
+
+/* Generate button */
+QPushButton {
+    color: white;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #ff7e5f, stop:1 #feb47b);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #ff9671, stop:1 #fec08a);
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+        stop:0 #e86a50, stop:1 #e9a060);
+}
