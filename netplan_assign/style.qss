@@ -1,3 +1,28 @@
+QLabel#notificationToast[success="true"] {
+    background: #28a745;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+QLabel#notificationToast[success="false"] {
+    background: #c0392b;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+RobotCredentialsDialog QLineEdit {
+    color: #003366;
+}
+/* RobotCredentialsDialog labels - dark blue */
+RobotCredentialsDialog QLabel {
+    color: #003366;
+}
+/* QInputDialog input fields - dark blue text */
+QInputDialog QLineEdit {
+    color: #003366;
+}
 /* NetPlan Assign - Application Stylesheet */
 
 /* Central widget - background gradient */
